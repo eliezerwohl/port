@@ -7,15 +7,20 @@ h1 {font-family: 'Oswald', white, sans-serif;}
 #jumbotron {
    
    font-size: 30px;
-  text-align: center;}
+  text-align: center;
+  font-family: 'Century Gothic';
 
-img {height:300px;}
+}
+
+
+#profile {height:300px;
+
+}
 
 #who { 
  
 
   font-family:'Montserrat', sans-serif;
-
   text-align: center; 
   font-size: 40px; 
   color:black;
@@ -31,6 +36,9 @@ h2, form{color:red;}
 
 
 p, li {color:red;}
+
+li, a {font-family: 'Oxygen', sans-serif;
+}
 
 
 
