@@ -14,3 +14,7 @@ h3, h2, h4 {
 .centerPicture {
   text-align: center;
 }
+
+.musicPlayer{
+  height:100px;
+}
