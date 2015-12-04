@@ -52,8 +52,12 @@ $("document").ready(function(){
     var panel= $("<div>").addClass("panel panel-default")
     var panelbody = $("<div>").addClass("panel-body")
 
-    $(panel).append(panelheading).append("certs")
-    $(panel).append(panelbody);
+
+    $(panelheading).append("Certifications")
+    $(panelbody).append('<h3>NASM 2014-2016 <br><br> NPTI 2013- <br><br> Red Cross CPR AED 2013- </h3>')
+
+    $(panel).append(panelheading);
+    $(panel).append(panelbody).append;
     $(".target").append(panel).append(trainingID);
 
   });
