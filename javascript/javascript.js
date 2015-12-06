@@ -59,7 +59,7 @@ $("document").ready(function(){
     $(panelheading).append("Certifications")
     $(panelbody).append('<h3>NASM 2014-2016 <br><br> NPTI 2013- <br><br> Red Cross CPR AED 2013- </h3>')
     $(panel).append(panelheading);
-    $(panel).append(panelbody).append;
+    $(panel).append(panelbody).append;  
     $(panelheadingTest).append("Testamonials")
     $(panelbodyTest).append('<h3>Put in the nice things ppl say about me here</h3>')
     $(panelTest).append(panelheadingTest);
@@ -71,10 +71,16 @@ $("document").ready(function(){
     if ( $( ".webCodingID" ).length ) {
       return false;
       }
+    picture.attr("src", "img/webCoding.jpeg");
     $(".target").empty();
     $(".jumbotron").hide();
-    picture.attr("src", "img/eliezerTrainer.jpg");
+    var buttonGroup = $('<div role="group" aria-label="...">').addClass('btn-group-vertical center-block')
+    var buttonPhilosophy =$("<button type='button'>").addClass("btn btn-default btn-lg").append("Design Philosophy")
+    var buttonStack =$("<button type='button'>").addClass("btn btn-default btn-lg").append("Visit My Stack Overflow Account")
+    var buttonGithub =$("<button type='button'>").addClass("btn btn-default btn-lg").append("Look at what I've been doing on Github")
+    var webCodingID =$("<div>").addClass("trainingID")
+    $(buttonGroup).append(buttonPhilosophy).append(buttonGithub).append(buttonStack);
+    $('.target').append(buttonGroup).append(webCodingID);
 
-    
   });
 });
