@@ -13,8 +13,11 @@ $("document").ready(function(){
     var buttonStack =$("<button type='button'>").addClass("btn btn-default btn-lg").append("Visit My Stack Overflow Account")
     var buttonGithub =$("<button type='button' id='git'>").addClass("btn btn-default btn-lg").append("Look at what I've been doing on Github")
     var webCodingID =$("<div>").addClass("trainingID")
+    var listGroup =$("<div>").addClass("list-group")
+    var listCol =$("<div>").addClass("col-md-6")
     $(buttonGroup).append(buttonPhilosophy).append(buttonGithub).append(buttonStack);
-    $('.target').append(buttonGroup).append(webCodingID);
+    $(listCol).append(listGroup)
+    $('.target').append(buttonGroup).append(webCodingID).append(listCol);
     // code for github table goes below
     // $("#git").on("click", function() {
     //   prompt("herro");
