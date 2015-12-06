@@ -12,11 +12,12 @@ $("document").ready(function(){
     var buttonPhilosophy =$("<button type='button'>").addClass("btn btn-default btn-lg").append("Design Philosophy")
     var buttonStack =$("<button type='button'>").addClass("btn btn-default btn-lg").append("Visit My Stack Overflow Account")
     var buttonGithub =$("<button type='button' id='git'>").addClass("btn btn-default btn-lg").append("Look at what I've been doing on Github")
-    var webCodingID =$("<div>").addClass("trainingID")
+    var webCodingID =$("<div>").addClass("webCodingID")
     var listGroup =$("<div>").addClass("list-group")
-    var listCol =$("<div>").addClass("col-md-6")
-    $(buttonGroup).append(buttonPhilosophy).append(buttonGithub).append(buttonStack);
-    $(listCol).append(listGroup)
+    var listCol =$("<div>").addClass("col-md-4")
+    var GitNameList =$("<div>").addClass("GitNameList")
+    $(buttonGroup).append(buttonPhilosophy).append(buttonStack).append(buttonGithub);
+    $(listCol).append(listGroup).append(GitNameList);
     $('.target').append(buttonGroup).append(webCodingID).append(listCol);
     // code for github table goes below
     // $("#git").on("click", function() {

@@ -1,7 +1,9 @@
 $(document).ready(function(){
     $(document).on("click", "#git", function(e){
       e.preventDefault();
-  
+     if ( $( ".list-group-item" ).length ) {
+      return false;
+      }
   $.ajax({
     type: "GET",
     url: "https://api.github.com/users/eliezerwohl/repos",
