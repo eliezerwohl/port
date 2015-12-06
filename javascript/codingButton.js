@@ -15,10 +15,16 @@ $("document").ready(function(){
     var webCodingID =$("<div>").addClass("webCodingID")
     var listGroup =$("<div>").addClass("list-group")
     var listCol =$("<div>").addClass("col-md-4")
-    var GitNameList =$("<div>").addClass("GitNameList")
+
+    var repoTable =$("<table>").addClass("table")
+    var repoTableBody =$("<tbody>")
+    var tableCol =$("<div>").addClass("col-md-8")
+    $(repoTable).append(repoTableBody)
+    $(tableCol).append(repoTable)
+
     $(buttonGroup).append(buttonPhilosophy).append(buttonStack).append(buttonGithub);
-    $(listCol).append(listGroup).append(GitNameList);
-    $('.target').append(buttonGroup).append(webCodingID).append(listCol);
+    $(listCol).append(listGroup);
+    $('.target').append(buttonGroup).append(webCodingID).append(listCol).append(tableCol);
     // code for github table goes below
     // $("#git").on("click", function() {
     //   prompt("herro");
