@@ -26,7 +26,7 @@ success: function(commits){
       var authorTd = $("<td>").append(commitData.author.login);
       var messageTd = $("<td>").append(commitData.commit.message);
       var dateTd = $("<td>").append(commitData.commit.author.date);
-      var htmlUrl =$("<a>").attr("href", url).append("<td>").append(commitData.html_url)
+      var htmlUrl =$("<a>").attr("href", commitData.html_url).append("<td>").append(commitData.html_url)
 
       var commitLink =$("<tr>") 
     
