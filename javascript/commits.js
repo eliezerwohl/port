@@ -5,7 +5,7 @@ $(document).ready(function(){
     $.ajax({
       type: "GET",
        url: $(this).attr("href"),
-      
+      // console.log($this);
 success: function(commits){
         $("tbody").empty();
 
@@ -22,15 +22,19 @@ success: function(commits){
     });
 
     function buildTableRow(commitData){
-     
+
       var authorTd = $("<td>").append(commitData.author.login);
       var messageTd = $("<td>").append(commitData.commit.message);
       var dateTd = $("<td>").append(commitData.commit.author.date);
+      var htmlUrl =$("<a>").attr("href", url).append("<td>").append(commitData.html_url)
 
-      return $("<tr>")
+      var commitLink =$("<tr>") 
+    
         .append(authorTd)
         .append(messageTd)
-        .append(dateTd);
+        .append(dateTd)
+        .append(htmlUrl);
+        return commitLink
     }
   });
 });
