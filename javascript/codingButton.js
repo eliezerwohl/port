@@ -25,9 +25,5 @@ $("document").ready(function(){
     $(buttonGroup).append(buttonPhilosophy).append(buttonStack).append(buttonGithub);
     $(listCol).append(listGroup);
     $('.target').append(buttonGroup).append(webCodingID).append(listCol).append(tableCol);
-    // code for github table goes below
-    // $("#git").on("click", function() {
-    //   prompt("herro");
-    //  }); 
     });     
 });
