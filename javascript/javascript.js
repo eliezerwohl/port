@@ -10,6 +10,7 @@ $("document").ready(function(){
   if ( $( ".musicID" ).length ) {
       return false;
       }
+    $(".colimg").show();
     $(".target").empty();
     $(".jumbotron").hide();
     picture.attr("src", "img/rickenbacker.jpg");
@@ -32,6 +33,7 @@ $("document").ready(function(){
     if ( $( ".storyID" ).length ) {
       return false;
       }
+    $(".colimg").show();
     picture.attr("src", "img/computer.jpg");
     var storyHeadline =$("<h3>").append("My Story")
     var strangelove =$("<h4>").append("or how I learned to stop worrying and love the code")
@@ -61,6 +63,7 @@ $("document").ready(function(){
    if ( $( ".trainingID" ).length ) {
       return false;
       }
+    $(".colimg").show();
     $(".target").empty();
     $(".jumbotron").hide();
     picture.attr("src", "img/eliezerTrainer.jpg");

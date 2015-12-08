@@ -5,6 +5,7 @@ $("document").ready(function(){
     if ( $( ".webCodingID" ).length ) {
       return false;
       }
+      $(".colimg").show();
     picture.attr("src", "img/webCoding.jpeg");
     $(".target").empty();
     $(".jumbotron").hide();
