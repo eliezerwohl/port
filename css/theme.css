@@ -20,7 +20,10 @@ h3, h2, h4 {
 .musicPlayer{
   height:100px;
 }
-
-/*.invisible{
-  display: none;
-}*/
+.contactPicture {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:200px; 
+    width:200px;}
+}
