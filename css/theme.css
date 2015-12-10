@@ -13,6 +13,12 @@ h3, h2, h4 {
   text-align: center;
 }
 
+.gmail{
+  left: 43%;
+    position: absolute;
+  /*margin-left: -25px;*/
+}
+
 .centerPicture {
   text-align: center;
 }
@@ -23,6 +29,9 @@ h3, h2, h4 {
     margin-left: auto;
     margin-right: auto;
     height:50px; 
-    width:50px;}
+    width:50px;
+
+
+  }
 }
 
