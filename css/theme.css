@@ -1,43 +1,30 @@
-/*.row-fluid {
-  visibility: visible;
-}*/
 
 img {
   height:400px;
   width: 267px;
-
 }
 
 h3, h2, h4 {
-
   text-align: center;
 }
-
-
-
 .navbar-brand-gmail {
-       position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-
-      padding-top: 0;
-    margin: auto;}
-
-
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  padding-top: 0;
+  margin: auto;
+}
 .centerPicture {
   text-align: center;
 }
 
 
 .contactPicture {
-/*  display: block;*/
-    margin-left: auto;
-    margin-right: auto;
-    height:40px; 
-    width:40px;
-
-
+  margin-left: auto;
+  margin-right: auto;
+  height:40px; 
+  width:40px;
   }
-}
+
 

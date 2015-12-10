@@ -1,4 +1,8 @@
 $("document").ready(function(){
+  $(".navbar-toggle").on("click", function(e) {
+   e.preventDefault();
+  $("#bs-example-navbar-collapse-1").slideToggle("slow");
+  });
   var picture, picsource, 
   picture = $("#profile")
   // links button  
@@ -6,7 +10,8 @@ $("document").ready(function(){
    picture.attr("src", "img/links.jpg");
     });
   // music button
-  $("#music").on("click", function() {
+  $("#music").on("click", function(e) {
+    e.preventDefault();
   if ( $( ".musicID" ).length ) {
       return false;
       }
@@ -20,16 +25,15 @@ $("document").ready(function(){
     var meadow =$("<div>").addClass("musicPlayer").append('<iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/222257621%3Fsecret_token%3Ds-B9Nqd&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>')
     var mahalo =$("<div>").append('<iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/172473705&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>')
     var musicID =$("<div>").addClass("musicID");
-
     $(panelbody).append(textp);
     $(panel).append(panelbody);
     $(".target").append(panel).append(mahalo).append(meadow).append(musicID);
-  });
+    });
 // my story button
-  $("#myStory").on("click", function() {
+  $("#myStory").on("click", function(e) {
+    e.preventDefault();
     $(".jumbotron").hide();
     $(".target").empty();
-
     if ( $( ".storyID" ).length ) {
       return false;
       }
@@ -38,15 +42,12 @@ $("document").ready(function(){
     var storyHeadline =$("<h3>").append("My Story")
     var strangelove =$("<h4>").append("or how I learned to stop worrying and love the code")
     var storyParagraph1=$("<p>").append('For the past 3 years, I have been employed as a personal trainer. One day, while talking to a client about the possible dangers of applying too much thermal paste on my CPU, he looked at me and said “why aren’t you working with computers? have you thought about coding?” I told him I had, but never followed through with it. He told me he has recently changed careers, and started by taking online classes, and he thought I should do the same. ')
-    
     var storyParagraph2=$("<p>").append('So I started take Code Academy classes. And I began to realize I might be able to coding further . A few months later, a friend  mentioned he had seen an ad for a Rutgers Coding Bootcamp, and I was immediately intrigued. I had looked at other bootcamps before, but this one was different. I told my friend "I needed to think about it."')
     var storyParagraph3=$("<p>").append('By the end of the next week I had signed up for the bootcamp. A month later, I went to the first class. Ever since that first class, I’ve been hooked. I’ve been coding and improving my skills every day. Or in the words of my teacher, “ABC, always be coding” .')
-    
-        var panel= $("<div>").addClass("panel panel-default")
+    var panel= $("<div>").addClass("panel panel-default")
     var panelbody = $("<div>").addClass("panel-body")
     var storyID =$("<div>").addClass("storyID")
-
-        $(panelbody).append(storyParagraph1)
+    $(panelbody).append(storyParagraph1)
     .append(storyParagraph2)
     .append(storyParagraph3)
     $(panel).append(panelbody);
@@ -54,12 +55,10 @@ $("document").ready(function(){
     .append(strangelove)
     .append(panel)
     .append(storyID);
-
-    
-   
-  }); //end of my story
+    }); //end of my story
   // personal training
-  $("#personalTraining").on("click", function() {
+  $("#personalTraining").on("click", function(e) {
+    e.preventDefault();
    if ( $( ".trainingID" ).length ) {
       return false;
       }
@@ -84,5 +83,9 @@ $("document").ready(function(){
     $(panelTest).append(panelbodyTest).append;
     $(".target").append(panel).append(trainingID).append(panelTest);
    });// end of personal training section
+  $("li").on("click", function(e) {
+  $("#bs-example-navbar-collapse-1").slideToggle()
+  e.preventDefault()
+});
 
 });
