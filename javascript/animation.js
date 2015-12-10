@@ -1,8 +1,6 @@
 $(document).ready(function(){
-   $(document).on("click", ".philButton", function(){
-  // $(".philDown").slidetoggle( "slow");
+  $(document).on("click", ".philButton", function(){
   $(".philDown").slideToggle();
-    // });
   });
 });
 
