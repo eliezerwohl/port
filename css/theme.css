@@ -17,13 +17,12 @@ h3, h2, h4 {
   text-align: center;
 }
 
-.musicPlayer{
-  height:100px;
-}
+
 .contactPicture {
-  display: block;
+/*  display: block;*/
     margin-left: auto;
     margin-right: auto;
-    height:200px; 
-    width:200px;}
+    height:50px; 
+    width:50px;}
 }
+
