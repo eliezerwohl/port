@@ -1,3 +1,7 @@
+body{
+  padding-top:85px;
+}
+
 
 img {
   height:400px;
@@ -18,7 +22,6 @@ h3, h2, h4 {
 .centerPicture {
   text-align: center;
 }
-
 
 .contactPicture {
   margin-left: auto;
