@@ -11,7 +11,8 @@ $("document").ready(function(){
     $(".target").empty();
     $(".jumbotron").hide();
     var buttonGroup = $('<div role="group" aria-label="...">').addClass('btn-group-vertical center-block')
-    var buttonPhilosophy =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass("philButton btn btn-default btn-lg").append("Design Philosophy")
+    var buttonPhilosophy =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass("philButton btn btn-default btn-lg").append("Design Philosophy");
+    var buttonProjects =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass("projects btn btn-default btn-lg").append("Projects");
     var buttonStack =$("<button type='button'>").addClass("btn btn-default btn-lg").append("Stack Overflow")
     var buttonGithub =$("<button type='button' id='git'>").addClass("btn btn-default btn-lg").append("Github")
     var webCodingID =$("<div>").addClass("webCodingID")
@@ -25,7 +26,7 @@ $("document").ready(function(){
     $(tableCol).append(repoTable)
     $(buttonGroup)
     .append(buttonPhilosophy).append(philDown)
-    .append(buttonStack).append(buttonGithub);
+    .append(buttonStack).append(buttonGithub).append(buttonProjects);
     $(listCol).append(listGroup);
     $('.target').append(buttonGroup)
     .append(webCodingID)
