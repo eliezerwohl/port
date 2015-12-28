@@ -13,8 +13,8 @@ $("document").ready(function(){
     var buttonGroup = $('<div role="group" aria-label="...">').addClass('btn-group-vertical center-block')
     var buttonPhilosophy =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass("philButton btn btn-default btn-lg").append("Design Philosophy");
     var buttonProjects =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass("projects btn btn-default btn-lg").append("Projects");
-    var buttonStack =$("<button type='button'>").addClass("btn btn-default btn-lg").append("Stack Overflow")
-    var buttonGithub =$("<button type='button' id='git'>").addClass("btn btn-default btn-lg").append("Github")
+    var buttonStack =$("<button type='button'>").addClass("btn btn-default stack btn-lg").append("Stack Overflow")
+    var buttonGithub =$("<button type='button' id='git'>").addClass("btn btn-default github btn-lg").append("Github")
     var webCodingID =$("<div>").addClass("webCodingID")
     var listGroup =$("<div>").addClass("list-group")
     var listCol =$("<div>").addClass("col-md-4")
@@ -33,5 +33,25 @@ $("document").ready(function(){
     .append(listCol)
     .append(tableCol);
     (philDown).hide();
+
+
+    var buttonGroup = $('<div role="group" aria-label="...">').addClass('projectHide btn-group-vertical center-block btnGroup2')
+    var projectJohn =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass(" btn btn-primary btn-md").append("First Profile");
+    var projectOldProfile =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass(" btn btn-primary btn-md").append("Click On Carmack");
+    var projectCurrent =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass(" btn btn-primary btn-md").append("Curent Profile");
+    var projectToDo =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass(" btn btn-primary btn-md").append("To-Do List");
+    var projectTriHotel =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass(" btn btn-primary btn-md").append("Tri State Hotels");
+    var projectRPC =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass(" btn btn-primary btn-md").append("Rock Paper Scissors");
+    var projectToGo =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass(" btn btn-primary btn-md").append("To-Go-List");;
+    (buttonGroup).append(projectJohn)
+    .append(projectOldProfile)
+    .append(projectCurrent)
+    .append(projectToDo)
+    .append(projectTriHotel)
+    .append(projectRPC)
+    .append(projectToGo);
+    $(".btn-group-vertical").append(buttonGroup);
+    $(".projectHide").hide();
+
     });     
 });
