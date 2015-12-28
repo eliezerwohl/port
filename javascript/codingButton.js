@@ -36,19 +36,15 @@ $("document").ready(function(){
 
 
     var buttonGroup = $('<div role="group" aria-label="...">').addClass('projectHide btn-group-vertical center-block btnGroup2')
-    var projectJohn =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass(" btn btn-primary btn-md").append("First Profile");
-    var projectOldProfile =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass(" btn btn-primary btn-md").append("Click On Carmack");
-    var projectCurrent =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass(" btn btn-primary btn-md").append("Curent Profile");
-    var projectToDo =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass(" btn btn-primary btn-md").append("To-Do List");
-    var projectTriHotel =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass(" btn btn-primary btn-md").append("Tri State Hotels");
-    var projectRPC =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass(" btn btn-primary btn-md").append("Rock Paper Scissors");
-    var projectToGo =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass(" btn btn-primary btn-md").append("To-Go-List");;
+    var projectJohn =$('<button type="button">').addClass("john btn btn-primary btn-md").append("First Game:Click On Carmack");
+    var projectToDo =$('<button type="button">').addClass("toDo btn btn-primary btn-md").append("To-Do List");
+    var projectTriHotel =$('<button type="button">').addClass("triHotel btn btn-primary btn-md").append("Tri State Hotels");
+    var projectRPS =$('<button type="button">').addClass("RPS btn btn-primary btn-md").append("Second Game:Rock Paper Scissors");
+    var projectToGo =$('<button type="button">').addClass("toGo btn btn-primary btn-md").append("To-Go-List");;
     (buttonGroup).append(projectJohn)
-    .append(projectOldProfile)
-    .append(projectCurrent)
     .append(projectToDo)
     .append(projectTriHotel)
-    .append(projectRPC)
+    .append(projectRPS)
     .append(projectToGo);
     $(".btn-group-vertical").append(buttonGroup);
     $(".projectHide").hide();
