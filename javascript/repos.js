@@ -6,7 +6,7 @@ $(document).ready(function(){
       }
   $.ajax({
     type: "GET",
-    url: "https://api.github.com/users/eliezerwohl/repos",
+    url: "https://crossorigin.me/https://api.github.com/users/eliezerwohl/repos",
     success: function(repos){
       for(var i = 0; i < repos.length; i++){
         var newRepoUrl = buildRepoUrl(repos[i])
