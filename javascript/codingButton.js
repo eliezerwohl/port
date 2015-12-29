@@ -6,10 +6,7 @@ $("document").ready(function(){
     if ( $( ".webCodingID" ).length ) {
       return false;
       }
-      $(".colimg").show();
     picture.attr("src", "img/webCoding.jpeg");
-    $(".target").empty();
-    $(".jumbotron").hide();
     var buttonGroup = $('<div role="group" aria-label="...">').addClass('btn-group-vertical center-block')
     var buttonPhilosophy =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass("philButton btn btn-default btn-lg").append("Design Philosophy");
     var buttonProjects =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass("projects btn btn-default btn-lg").append("Projects");
