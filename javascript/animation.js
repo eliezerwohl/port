@@ -13,6 +13,11 @@ $(document).ready(function(){
 window.open('http://stackoverflow.com/users/5510690/eliezer-wohl')
 });
 
+    $(document).on("click", ".github", function(){
+window.open('https://github.com/eliezerwohl')
+});
+
+
   $(document).on("click", ".john", function(){
   window.open('https://evening-beyond-7392.herokuapp.com') 
 });
