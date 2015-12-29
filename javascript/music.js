@@ -1,7 +1,4 @@
  function musicFunction() {
- if ( $( ".musicID" ).length ) {
-      return false;
-      }
     $(".colimg").show();
     $(".target").empty();
     $(".jumbotron").hide();
@@ -18,6 +15,5 @@
     $(".target").append(panel)
     .append(mahalo)
     .append(meadow)
-    .append(alderlake)
-    .append(musicID);
+    .append(alderlake);
    }

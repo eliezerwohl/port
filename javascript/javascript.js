@@ -29,4 +29,8 @@ $("document").ready(function(){
   e.preventDefault()
   eliezerButton();
   });
+  $("#webCoding").on("click", function(e){
+  e.preventDefault
+  codingFunction()
+  });
 });
