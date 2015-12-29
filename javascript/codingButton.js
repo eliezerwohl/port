@@ -1,11 +1,4 @@
-$("document").ready(function(){
-  var picture, picsource, 
-  picture = $("#profile")
-   $("#webCoding").on("click", function(e) {
-    e.preventDefault();
-    if ( $( ".webCodingID" ).length ) {
-      return false;
-      }
+function codingFunction() {
     picture.attr("src", "img/webCoding.jpeg");
     var buttonGroup = $('<div role="group" aria-label="...">').addClass('btn-group-vertical center-block')
     var buttonPhilosophy =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass("philButton btn btn-default btn-lg").append("Design Philosophy");
@@ -30,8 +23,6 @@ $("document").ready(function(){
     .append(listCol)
     .append(tableCol);
     (philDown).hide();
-
-
     var buttonGroup = $('<div role="group" aria-label="...">').addClass('projectHide btn-group-vertical center-block btnGroup2')
     var projectJohn =$('<button type="button">').addClass("john btn btn-primary btn-md").append("<strong>First Game</strong>:Click On Carmack");
     var projectToDo =$('<button type="button">').addClass("toDo btn btn-primary btn-md").append("To-Do List");
@@ -45,6 +36,4 @@ $("document").ready(function(){
     .append(projectToGo);
     $(".btn-group-vertical").append(buttonGroup);
     $(".projectHide").hide();
-
-    });     
-});
+}
