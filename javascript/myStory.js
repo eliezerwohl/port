@@ -1,10 +1,7 @@
 function myStoryFunction() {
-$(".jumbotron").hide();
-    $(".target").empty();
    if ( $( ".storyID" ).length ) {
       return false;
       }
-    $(".colimg").show();
     picture.attr("src", "img/computer.jpg");
     var storyHeadline =$("<h3>").append("My Story")
     var strangelove =$("<h4>").append("Or How I Learned to Stop Worrying and Love the Code")
@@ -22,4 +19,4 @@ $(".jumbotron").hide();
     .append(strangelove)
     .append(panel)
     .append(storyID);
-    }
+}

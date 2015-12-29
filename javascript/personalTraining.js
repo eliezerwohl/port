@@ -1,7 +1,4 @@
 function personalTrainingFunction() {
-    $(".colimg").show();
-    $(".target").empty();
-    $(".jumbotron").hide();
     picture.attr("src", "img/eliezerTrainer.jpg");
     var panelheading = $("<div>").addClass("panel-heading")
     var panel= $("<div>").addClass("panel panel-default")
