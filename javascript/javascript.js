@@ -10,9 +10,6 @@ $("document").ready(function(){
     $(".target").empty();
     $(".jumbotron").hide();
   });
-  $("#links").on("click", function() {
-   picture.attr("src", "img/links.jpg");
-    });
   $("#music").on("click", function(e) {
     e.preventDefault();
     musicFunction();
