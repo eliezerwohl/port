@@ -1,6 +1,7 @@
 function eliezerButton() {
-     $(".colimg").show();
+    $(".colimg").show();
     $(".target").empty();
     $(".jumbotron").show();
     $("#profile").attr("src", "img/EliezerWohl.jpg");
+    $(".scrollUp").scrollTop();
   }
