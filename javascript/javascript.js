@@ -1,14 +1,13 @@
  var picture = $("#profile");
 $("document").ready(function(){
+  eliezerButton();
   $(".navbar-toggle, li").on("click", function(e) {
    e.preventDefault();
   $("#bs-example-navbar-collapse-1").slideToggle("fast");
   });
-  $("li").on("click", function(e){
+  $("li, .eliezerButton").on("click", function(e){
     e.preventDefault();
-    $(".colimg").show();
     $(".target").empty();
-    $(".jumbotron").hide();
     $(".scrollUp").scrollTop();
   });
   $("#music").on("click", function(e) {
@@ -26,7 +25,6 @@ $("document").ready(function(){
   $(".eliezerButton").on("click", function(e) {
   e.preventDefault();
   eliezerButton();
-
   });
   $("#webCoding").on("click", function(e){
   e.preventDefault

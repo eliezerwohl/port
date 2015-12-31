@@ -1,5 +1,6 @@
 $(document).ready(function(){
-  $(document).on("click", ".philButton", function(){
+  $(document).on("click", ".philButton", function(e){
+    e.preventDefault();
   $(".philDown").slideToggle();
   });
    $(document).on("click", ".projects", function(e){
