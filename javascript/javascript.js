@@ -1,10 +1,11 @@
  var picture = $("#profile");
 $("document").ready(function(){
   eliezerButton();
+  $(".scrollUp").scrollTop();
   $(".navbar-toggle, li").on("click", function(e) {
-   e.preventDefault();
-  $("#bs-example-navbar-collapse-1").slideToggle("fast");
-  });
+     e.preventDefault();
+    $("#bs-example-navbar-collapse-1").slideToggle("fast");
+    });
   $("li, .eliezerButton").on("click", function(e){
     e.preventDefault();
     $(".target").empty();
@@ -23,11 +24,11 @@ $("document").ready(function(){
     personalTrainingFunction()
    });
   $(".eliezerButton").on("click", function(e) {
-  e.preventDefault();
-  eliezerButton();
+    e.preventDefault();
+    eliezerButton();
   });
   $("#webCoding").on("click", function(e){
-  e.preventDefault
-  codingFunction()
+    e.preventDefault
+    codingFunction()
   });
 });

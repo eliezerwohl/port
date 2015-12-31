@@ -1,6 +1,7 @@
 .containMain{
   padding-bottom:20px;
-   padding-top:85px
+   padding-top:85px;
+   margin-bottom: 5px;
 }
 
 p {
@@ -22,6 +23,9 @@ img {
 
 h3, h2, h4 {
   text-align: center;
+}
+.navbar-fixed-bottom{
+  margin-top:40px; 
 }
 .navbar-brand-gmail {
   position: absolute;
