@@ -6,4 +6,5 @@ function eliezerButton() {
     jumbotron.append(h3)
     .append(h2);
     $(".target").append(jumbotron);
+    
   }
