@@ -3,7 +3,8 @@ function codingFunction() {
     var buttonGroup = $('<div role="group" aria-label="...">').addClass('btn-group-vertical center-block')
     var buttonPhilosophy =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass("philButton btn btn-default btn-lg").append("Design Philosophy");
     var buttonProjects =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass("projects btn btn-default btn-lg").append("Projects");
-    var buttonStack =$("<button type='button'>").addClass("btn btn-default stack btn-lg").append("Stack Overflow")
+    var buttonStack =$("<button type='button'>").addClass("btn btn-default stack btn-lg").append("Stack Overflow");
+    var buttonStack =$("<button type='button'>").addClass("btn btn-default gear btn-lg").append("Gear");
     var buttonGithub =$("<button type='button' id='git'>").addClass("btn btn-default github btn-lg").append("Github")
     var webCodingID =$("<div>").addClass("webCodingID")
     var listGroup =$("<div>").addClass("list-group")
@@ -37,3 +38,24 @@ function codingFunction() {
     $(".btn-group-vertical").append(buttonGroup);
     $(".projectHide").hide();
 }
+$("body").on("click", ".gear", function(){
+    $(".modalTitle, .modalBody").empty();
+    $('.modal').modal()
+    $(".modalTitle").append("My Gear");
+    $(".modalBody").append('<h4> Custom Built Rig </h4>\
+        <p>MSI GTX 970</p>\
+        <p>4.0 OC i5 4590k</p>\
+        <p>16gb RAM</p>\
+        <p>Samsung Evo 250 SSD</p>\
+        <p>WD 1 TB Hard Drive</p>\
+        <p>Fractal Design R4 case</p>\
+        <p>Cooler Master Evo 212 CPU fan</p>\
+        <br>\
+        <h4> Web Development Tools</h4>\
+        <p>Microsoft Sculpt Keyboard</p>\
+        <p>Anker Vertical Mouse</p>\
+        <p>MacBook Pro 13"</p>\
+        <p>Droid Turbo (for testing)</p>\
+        <p>Samsung Galaxy Tab 2 (for testing)</p>')
+
+});
