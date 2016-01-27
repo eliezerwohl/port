@@ -3,13 +3,11 @@ $("document").ready(function(){
   eliezerButton();
   $(".scrollUp").scrollTop();
   $(".navbar-toggle, li").on("click", function(e) {
-    window.stop();
      e.preventDefault();
     $("#bs-example-navbar-collapse-1").slideToggle("fast");
     });
   $("li, .eliezerButton").on("click", function(e){
     e.preventDefault();
-    window.stop();
     $(".target").empty();
     $(".scrollUp").scrollTop();
   });
