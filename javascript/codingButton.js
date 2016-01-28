@@ -29,7 +29,7 @@ function codingFunction() {
     var projectToDo =$('<button type="button">').addClass("toDo btn btn-primary btn-md").append("To-Do List");
     var projectTriHotel =$('<button type="button">').addClass("triHotel btn btn-primary btn-md").append("Tri State Hotels");
     var projectRPS =$('<button type="button">').addClass("RPS btn btn-primary btn-md").append("<strong>Second Game</strong>:Rock Paper Scissors");
-    var projectToGo =$('<button type="button">').addClass("toGo btn btn-primary btn-md").append("To-Go-List");;
+    var projectToGo =$('<button type="button">').addClass("toGo btn btn-primary btn-md").append("To-Go-List");
     (buttonGroup).append(projectJohn)
     .append(projectToDo)
     .append(projectTriHotel)
@@ -42,7 +42,7 @@ $("body").on("click", ".gear", function(){
     $(".modalTitle, .modalBody").empty();
     $('.modal').modal();
     $(".modalTitle").append("My Gear");
-    $(".modalBody").append('<h4> Custom Built Rig </h4>\
+    $(".modalBody").append('<h4>Custom Built Rig</h4>\
         <p>MSI GTX 970</p>\
         <p>4.0GHz OC i5 4590k</p>\
         <p>16gb RAM</p>\
@@ -50,9 +50,9 @@ $("body").on("click", ".gear", function(){
         <p>Western Digital 1TB HD</p>\
         <p>Fractal Design R4 case</p>\
         <p>Cooler Master Evo 212 CPU fan</p>\
-        <p>Noctua (1), Cooler Master (2), Fractal Design (2) case fans</p>
+        <p>Noctua (1), Cooler Master (2), Fractal Design (2) case fans</p>\
         <br>\
-        <h4> Web Development Tools</h4>\
+        <h4>Web Development Tools</h4>\
         <p>Microsoft Sculpt Keyboard</p>\
         <p>Anker Vertical Mouse</p>\
         <p>MacBook Pro 13"</p>\
