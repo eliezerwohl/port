@@ -8,6 +8,4 @@ Bootstrap/(bootswatch)
 Gzip
 
 Deployed site:
-https://peaceful-tor-5987.herokuapp.com/
-or access at
 http://www.eliezerwohl.com/
