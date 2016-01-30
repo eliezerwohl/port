@@ -39,7 +39,7 @@ function codingFunction() {
     $(".projectHide").hide();
 }
 $("body").on("click", ".gear", function(){
-    $(".modalTitle, .modalBody").empty();
+    $(".modalTitle, .modalBody, .modalFooter").empty();
     $('.modal').modal();
     $(".modalTitle").append("My Gear");
     $(".modalBody").append('<h4>Custom Built Rig</h4>\
@@ -58,5 +58,5 @@ $("body").on("click", ".gear", function(){
         <p>MacBook Pro 13"</p>\
         <p>Droid Turbo (for testing)</p>\
         <p>Samsung Galaxy Tab 2 (for testing)</p>');
-
+    $(".modalFooter").append('<button type="button" class="btn btn-info btn-lg col-lg-4 col-xs-12" data-dismiss="modal">Close</button>');
 });

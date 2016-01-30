@@ -3,7 +3,9 @@
    padding-top:85px;
    margin-bottom: 5px;
 }
-
+.modalFooter{
+  margin-top: 15px
+}
 p {
   font-size: 1.25em;
 }
