@@ -1,4 +1,23 @@
 $(document).ready(function(){
+  
+function bottomNav(){
+   var viewportWidth = $(window).width();
+    if (viewportWidth > 990) {
+      $(".navBottom").addClass("navbar-fixed-bottom");
+    }
+    else{
+      $(".navBottom").removeClass("navbar-fixed-bottom");
+    }
+}
+
+bottomNav();    
+
+$(window).resize(function () {
+  bottomNav();
+});
+
+  
+
   $(document).on("click", ".philButton", function(e){
     e.preventDefault();
   $(".philDown").slideToggle();
