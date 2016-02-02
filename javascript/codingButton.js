@@ -24,17 +24,45 @@ function codingFunction() {
     .append(listCol)
     .append(tableCol);
     (philDown).hide();
+
+ 
+
     var buttonGroup = $('<div role="group" aria-label="...">').addClass('projectHide btn-group-vertical center-block btnGroup2')
-    var projectJohn =$('<button type="button">').addClass("john btn btn-primary btn-md").append("<strong>First Game</strong>:Click On Carmack");
-    var projectToDo =$('<button type="button">').addClass("toDo btn btn-primary btn-md").append("To-Do List");
-    var projectTriHotel =$('<button type="button">').addClass("triHotel btn btn-primary btn-md").append("Tri State Hotels");
-    var projectRPS =$('<button type="button">').addClass("RPS btn btn-primary btn-md").append("<strong>Second Game</strong>:Rock Paper Scissors");
-    var projectToGo =$('<button type="button">').addClass("toGo btn btn-primary btn-md").append("To-Go-List");
-    (buttonGroup).append(projectJohn)
-    .append(projectToDo)
-    .append(projectTriHotel)
-    .append(projectRPS)
-    .append(projectToGo);
+    // var projectJohn =$('<button type="button">').addClass("john btn btn-primary btn-md").append("<strong>First Game</strong>:Click On Carmack");
+    // var projectToDo =$('<button type="button">').addClass("toDo btn btn-primary btn-md").append("To-Do List");
+    // var projectTriHotel =$('<button type="button">').addClass("triHotel btn btn-primary btn-md").append("Tri State Hotels");
+    // var projectRPS =$('<button type="button">').addClass("RPS btn btn-primary btn-md").append("<strong>Second Game</strong>:Rock Paper Scissors");
+    // var projectToGo =$('<button type="button">').addClass("toGo btn btn-primary btn-md").append("To-Go-List");
+    // (buttonGroup).append(projectJohn)
+    // .append(projectToDo)
+    // .append(projectTriHotel)
+    // .append(projectRPS)
+    // .append(projectToGo);
+
+    var john = { 
+    class: "john",
+    text:"this is different",
+    link:"https://evening-beyond-7392.herokuapp.com"
+    } 
+
+    var toDo = { 
+    class: "todo",
+    text:"toDo List",
+    link:'https://fathomless-cliffs-4838.herokuapp.com'
+    } 
+
+    var toGo = {
+    class:"toGo",
+    text: "To go list",
+    link:"http://to-go-list.herokuapp.com"
+    }      
+
+    var projectNames = [john, toGo, toDo, ]
+    for (var i = 0; i < projectNames.length; i++) {
+       console.log(projectNames[i].link)
+
+       $(buttonGroup).append('<a href ="' + projectNames[i].link + '" class = "' + projectNames[i].class + ' btn btn-primary btn-md"> ' +  projectNames[i].text + '</a>')
+    }
     $(".btn-group-vertical").append(buttonGroup);
     $(".projectHide").hide();
 }
