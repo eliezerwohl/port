@@ -23,21 +23,19 @@ function codingFunction() {
     .append(listCol)
     .append(tableCol);
     (philDown).hide();
-    var buttonGroup = $('<div role="group" aria-label="...">').addClass('projectHide btn-group-vertical center-block btnGroup2');
-    $(".btn-group-vertical").append(buttonGroup);
-    
+    var projectGroup = $('<div role="group" aria-label="...">').addClass('projectHide btn-group-vertical center-block btnGroup2');
+    $(".btn-group-vertical").append(projectGroup);
     var projectNames ={
-    0:{class: "john", text:"<strong>First Game</strong>:Click On Carmack", link:"https://evening-beyond-7392.herokuapp.com"}, 
-    1:{class:"toDo", text: "To-Do List", link:"https://fathomless-cliffs-4838.herokuapp.com"},  
-    2:{class: "triHotel", text:"Tri State Hotels", link:"https://evening-beyond-7392.herokuapp.com"},
-    3:{class: "RPS", text:"Rocks Paper Scissor", link:"https://polar-inlet-6927.herokuapp.com"},
-    4:{class: "toGo", text:"To-Go List", link:"http://to-go-list.herokuapp.com"}  
+    0:{text:"<strong>First Game</strong>:Click On Carmack", link:"https://evening-beyond-7392.herokuapp.com"}, 
+    1:{text: "To-Do List", link:"https://fathomless-cliffs-4838.herokuapp.com"},  
+    2:{text:"Tri State Hotels", link:"https://evening-beyond-7392.herokuapp.com"},
+    3:{text:"Rocks Paper Scissor", link:"https://polar-inlet-6927.herokuapp.com"},
+    4:{text:"To-Go List", link:"http://to-go-list.herokuapp.com"}  
     }
     for (var i = 0; i < Object.keys(projectNames).length; i++) {
        console.log(projectNames[i].link)
-       $(buttonGroup).append('<a href ="' + projectNames[i].link + '" target="_blank" class = "' + projectNames[i].class + ' btn btn-primary btn-md"> ' +  projectNames[i].text + '</a>')
+       $(projectGroup).append('<a href ="' + projectNames[i].link + '" target="_blank" class = "btn btn-primary btn-md"> ' +  projectNames[i].text + '</a>')
     }
-    $(".btn-group-vertical").append(buttonGroup);
     $(".projectHide").hide();
 }  
 $("body").on("click", ".gear", function(){
