@@ -1,14 +1,14 @@
 function codingFunction() {
     picture.attr("src", "img/webCoding.jpeg");
-    var buttonGroup = $('<div role="group" aria-label="...">').addClass('btn-group-vertical center-block')
+    var buttonGroup = $('<div role="group" aria-label="...">').addClass('btn-group-vertical center-block');
     var buttonPhilosophy =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass("philButton btn btn-default btn-lg").append("Design Philosophy");
     var buttonProjects =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass("projects btn btn-default btn-lg").append("Projects");
-    var buttonStack =$("<button type='button'>").addClass("btn btn-default stack btn-lg").append("Stack Overflow");
-    var buttonStack =$("<button type='button'>").addClass("btn btn-default gear btn-lg").append("My Gear");
-    var buttonGithub =$("<button type='button' id='git'>").addClass("btn btn-default github btn-lg").append("Github")
-    var philDown =$ ('<h3>').addClass("philDown").append("'Mobile First'")
+    var buttonStack =$("<a href ='http://stackoverflow.com/users/5510690/eliezer-wohl' target='_blank' type='button'>").addClass("btn btn-default stack btn-lg").append("Stack Overflow");
+    var buttonGear =$("<button type='button'>").addClass("btn btn-default gear btn-lg").append("My Gear");
+    var buttonGithub =$("<a href = 'https://github.com/eliezerwohl' type='button' target='_blank' id='git'>").addClass("btn btn-default github btn-lg").append("Github");
+    var philDown =$ ('<h3>').addClass("philDown").append("'Mobile First'");
     $(buttonGroup)
-    .append(buttonPhilosophy).append(philDown)
+    .append(buttonPhilosophy).append(philDown).append(buttonGear)
     .append(buttonStack).append(buttonGithub).append(buttonProjects);
     $('.target').append(buttonGroup)
     $(".philDown").hide();
