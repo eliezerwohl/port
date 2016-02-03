@@ -6,25 +6,15 @@ function codingFunction() {
     var buttonStack =$("<button type='button'>").addClass("btn btn-default stack btn-lg").append("Stack Overflow");
     var buttonStack =$("<button type='button'>").addClass("btn btn-default gear btn-lg").append("My Gear");
     var buttonGithub =$("<button type='button' id='git'>").addClass("btn btn-default github btn-lg").append("Github")
-    var webCodingID =$("<div>").addClass("webCodingID")
-    var listGroup =$("<div>").addClass("list-group")
-    var listCol =$("<div>").addClass("col-md-4")
     var philDown =$ ('<h3>').addClass("philDown").append("'Mobile First'")
-    var repoTable =$("<table>").addClass("table")
-    var repoTableBody =$("<tbody>")
-    var tableCol =$("<div>").addClass("col-md-8")
-    $(repoTable).append(repoTableBody)
-    $(tableCol).append(repoTable)
     $(buttonGroup)
     .append(buttonPhilosophy).append(philDown)
     .append(buttonStack).append(buttonGithub).append(buttonProjects);
-    $(listCol).append(listGroup);
     $('.target').append(buttonGroup)
-    .append(listCol)
-    .append(tableCol);
-    (philDown).hide();
+    $(".philDown").hide();
     var projectGroup = $('<div role="group" aria-label="...">').addClass('projectHide btn-group-vertical center-block btnGroup2');
     $(".btn-group-vertical").append(projectGroup);
+    // add project below, will automatically be made into a button
     var projectNames ={
     0:{text:"<strong>First Game</strong>:Click On Carmack", link:"https://evening-beyond-7392.herokuapp.com"}, 
     1:{text: "To-Do List", link:"https://fathomless-cliffs-4838.herokuapp.com"},  
