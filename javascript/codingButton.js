@@ -9,7 +9,7 @@ function codingFunction() {
     var philDown =$ ('<h3>').addClass("philDown").append("'Mobile First'");
     $(buttonGroup)
     .append(buttonPhilosophy).append(philDown).append(buttonGear)
-    .append(buttonStack).append(buttonGithub).append(buttonProjects);
+    .append(buttonGithub).append(buttonStack).append(buttonProjects);
     $('.target').append(buttonGroup)
     $(".philDown").hide();
     var projectGroup = $('<div role="group" aria-label="...">').addClass('projectHide btn-group-vertical center-block btnGroup2');

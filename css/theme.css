@@ -1,7 +1,12 @@
 .containMain{
   padding-bottom:20px;
    padding-top:85px;
-   margin-bottom: 5px;
+   margin-bottom: 20px;
+}
+@media only screen and (max-width: 990px) {
+  .containMain { 
+    padding-top:85px;
+  }
 }
 .modalFooter{
   margin-top: 15px
@@ -40,12 +45,9 @@ h3, h2, h4 {
 .centerPicture {
   text-align: center;
 }
-
 .contactPicture {
   margin-left: auto;
   margin-right: auto;
   height:40px; 
   width:40px;
-  }
- 
-
+}
