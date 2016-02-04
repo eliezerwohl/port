@@ -23,6 +23,12 @@ $(document).ready(function(){
   // toggles the projects button
   e.preventDefault();
   $(".projectHide").toggle();
+
+  });
+ $(document).one("click", ".projects", function(e){
+ // activates modal once
+  e.preventDefault(); 
+     codingAlert();
   });
 });
 
