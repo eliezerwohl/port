@@ -45,8 +45,6 @@ $("body").on("click", ".gear", function(){
         <h4>Web Development Tools</h4>\
         <p>Microsoft Sculpt Keyboard</p>\
         <p>Anker Vertical Mouse</p>\
-        <p>MacBook Pro 13"</p>\
-        <p>Droid Turbo (for testing)</p>\
-        <p>Samsung Galaxy Tab 2 (for testing)</p>');
+        <p>MacBook Pro 13"</p>');
     $(".modalFooter").append('<button type="button" class="btn btn-info btn-lg col-lg-4 col-xs-12" data-dismiss="modal">Close</button>');
 });
