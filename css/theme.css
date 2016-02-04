@@ -29,6 +29,9 @@ p {
 img {
   width: 267px;
 }
+iframe{
+  margin-bottom: 18px;
+}
 
 h3, h2, h4 {
   text-align: center;
