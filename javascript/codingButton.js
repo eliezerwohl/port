@@ -20,7 +20,8 @@ function codingFunction() {
     1:{text: "To-Do List", link:"https://fathomless-cliffs-4838.herokuapp.com"},  
     2:{text:"Tri State Hotels", link:"https://evening-beyond-7392.herokuapp.com"},
     3:{text:"Rocks Paper Scissor", link:"https://polar-inlet-6927.herokuapp.com"},
-    4:{text:"To-Go List", link:"http://to-go-list.herokuapp.com"}  
+    4:{text:"To-Go List", link:"http://to-go-list.herokuapp.com"},
+    5:{text:"King of New York Dice Roller", link:"https://kingofdice.herokuapp.com/"} 
     }
     for (var i = 0; i < Object.keys(projectNames).length; i++) {
        console.log(projectNames[i].link)
@@ -28,8 +29,19 @@ function codingFunction() {
     }
     $(".projectHide").hide();
 }  
+function codingAlert(){
+    $(".modalTitle, .modalBody").empty();
+    $('.modal').modal();
+    $(".modalTitle").append("FYI");
+     $(".modalBody").append('<h4>All my projects are listed here, in the order in which they were created. </h4>\
+     <h4>I have made all of them available to show my improvement.');
+    $("#modalButton").html("OK")
+
+}
+
+
 $("body").on("click", ".gear", function(){
-    $(".modalTitle, .modalBody, .modalFooter").empty();
+    $(".modalTitle, .modalBody").empty();
     $('.modal').modal();
     $(".modalTitle").append("My Gear");
     $(".modalBody").append('<h4>Custom Built Rig</h4>\
@@ -46,5 +58,5 @@ $("body").on("click", ".gear", function(){
         <p>Microsoft Sculpt Keyboard</p>\
         <p>Anker Vertical Mouse</p>\
         <p>MacBook Pro 13"</p>');
-    $(".modalFooter").append('<button type="button" class="btn btn-info btn-lg col-lg-4 col-xs-12" data-dismiss="modal">Close</button>');
+    $("#modalButton").html("Close")
 });

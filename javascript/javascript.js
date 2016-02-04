@@ -29,6 +29,8 @@ $("document").ready(function(){
   });
   $("#webCoding").on("click", function(e){
     e.preventDefault
-    codingFunction()
+        codingAlert();
+
+    codingFunction();
   });
 });
