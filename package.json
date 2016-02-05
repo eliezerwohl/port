@@ -1,0 +1,24 @@
+{
+  "name": "port",
+  "version": "1.0.0",
+  "description": "Portfolio page",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliezerwohl/port.git"
+  },
+  "author": "elie wohl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliezerwohl/port/issues"
+  },
+  "homepage": "https://github.com/eliezerwohl/port#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4"
+  }
+}
