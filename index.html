@@ -42,51 +42,40 @@
       </div>
     </div> 
   </div>
-    <div class="nav navbar-inverse navbar-fixed-bottom hidden-sm hidden-xs">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <a href= "https://twitter.com/EliezerWohl" target="_blank"><img class="contactPicture pull-left" src="img/twit.png"></a>
-          </div>
-            <div class="col-md-4">
-            <a href="mailto:eliezerwohl@gmail.com"><a class="navbar-brand-gmail" href="mailto:eliezerwohl@gmail.com"><img class="contactPicture gmail" src="img/gmailIcon.png"></a>
-          </div>
-          <div class="col-md-4">
-             <a href="http://www.linkedin.com/in/eliezerWohl" target="_blank"><img class="contactPicture pull-right" src="img/linkedinIcon.png"></a>
-          </div>
-        </div>    
-      </div>
+  <div class="nav navbar-inverse navBottom">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-4 visible-lg visible-md">
+          <a href= "https://twitter.com/EliezerWohl" target="_blank"><img class="contactPicture pull-left" src="img/twit.png"></a>
+        </div>
+        <div class="col-md-4 hidden-sm hidden-xs">
+          <a class="navbar-brand-gmail" href="mailto:eliezerwohl@gmail.com"><img class="contactPicture gmail" src="img/gmailIcon.png"></a>
+        </div>
+          <div class="col-md-4 hidden-lg hidden-md">
+          <a href="mailto:eliezerwohl@gmail.com"><img class="pull-left contactPicture gmail" src="img/gmailIcon.png"></a>
+        </div>
+        <div class="col-md-4">
+           <a href="http://www.linkedin.com/in/eliezerWohl" target="_blank"><img class="contactPicture pull-right" src="img/linkedinIcon.png"></a>
+        </div> 
+      </div>    
     </div>
-    <!-- media query?    -->
-    <div class="nav navbar-inverse visible-sm visible-xs">
-     <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-          </div>
-            <div class="col-md-4">
-            <a href="mailto:eliezerwohl@gmail.com"><img class="pull-left contactPicture gmail" src="img/gmailIcon.png"></a>
-          </div>
-          <div class="col-md-4">
-             <a href="http://www.linkedin.com/in/eliezerWohl" target="_blank"><img class="contactPicture pull-right" src="img/linkedinIcon.png"></a>
-          </div> 
-        </div>    
-      </div>
-    </div>
-    <div class="modal fade" tabindex="-1" role="dialog"> 
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title modalTitle"></h4>
-      </div>
-      <div class="modal-body modalBody">
-      </div>
-      <div class="">
-        <button type="button" class="btn btn-default btn-lg col-md-3" data-dismiss="modal">Close</button>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+  </div>
+  <!--   modal goes below -->
+  <div class="modal fade" tabindex="-1" role="dialog"> 
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title modalTitle"></h4>
+        </div>
+        <div class="modal-body modalBody">
+        </div>
+        <div class="modalFooter">
+        <button id ="modalButton" type="button" class="btn btn-info btn-lg col-lg-4 col-xs-12" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script type="text/javascript" src="javascript/javascript.js"></script>
