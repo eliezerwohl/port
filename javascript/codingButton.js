@@ -1,6 +1,6 @@
 function codingFunction() {
     picture.attr("src", "img/webCoding.jpeg");
-    var buttonGroup = $('<div role="group" aria-label="...">').addClass('btn-group-vertical center-block');
+    var buttonGroup = $('<div role="group" aria-label="...">').addClass('col-md-8 col-xs-12 btn-group-vertical col-md-offset-2');
     var buttonPhilosophy =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass("philButton btn btn-default btn-lg").append("Design Philosophy");
     var buttonProjects =$('<button type="button" data-toggle="button" aria-pressed="false" autocomplete="off">').addClass("projects btn btn-default btn-lg").append("Projects");
     var buttonStack =$("<a href ='http://stackoverflow.com/users/5510690/eliezer-wohl' target='_blank' type='button'>").addClass("btn btn-default stack btn-lg").append("Stack Overflow");
@@ -36,10 +36,7 @@ function codingAlert(){
      $(".modalBody").append('<h4>All my projects are listed here, in the order in which they were created. </h4>\
      <h4>I have made all of them available to show my improvement.');
     $("#modalButton").html("OK")
-
 }
-
-
 $("body").on("click", ".gear", function(){
     $(".modalTitle, .modalBody").empty();
     $('.modal').modal();
