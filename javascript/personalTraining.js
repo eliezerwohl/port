@@ -7,7 +7,7 @@ function personalTrainingFunction() {
     var panelTest= $("<div>").addClass("panel panel-default")
     var panelbodyTest = $("<div>").addClass("panel-body")
     $(panelheading).append("<h3>Certifications</h3>")
-    $(panelbody).append('<p>National Academy of Sports Medicine 2014-2016 </p><br> <p>National Personal Training Institute. 2013- </p><br> <p>Red Cross CPR AED 2013- </p>')
+    $(panelbody).append('<p>National Academy of Sports Medicine: 2014-2016 </p><br> <p>National Personal Training Institute: 2013- </p><br> <p>Red Cross CPR AED: 2013- </p>')
     $(panel).append(panelheading);
     $(panel).append(panelbody).append;  
     $(panelheadingTest).append("<h3>Testamonials</h3>")
