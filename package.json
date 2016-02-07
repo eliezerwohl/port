@@ -2,7 +2,7 @@
   "name": "port",
   "version": "1.0.0",
   "description": "Portfolio page",
-  "main": "index.html",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/eliezerwohl/port#readme",
   "dependencies": {
     "body-parser": "^1.14.2",
+    "connect": "^3.4.1",
     "express": "^4.13.4"
   }
 }
