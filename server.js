@@ -12,10 +12,16 @@ app.get("/", function(req, res) {
   res.sendFile(process.cwd() + "/public/html/index.html");
 });
 
+app.get("/clicky", function(req, res) {
+  res.sendFile(process.cwd() + "/public/html/clicky.html");
+});
+
+
 
 app.get("/rps", function(req, res) {
   res.sendFile(process.cwd() + "/public/html/rps.html");
 });
+
 app.listen(PORT, function() {
   console.log("Listening on port %s", PORT);
 });
