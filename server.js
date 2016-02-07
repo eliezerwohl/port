@@ -7,8 +7,9 @@ app.use("/css", express.static("public/css"));
 app.use("/img", express.static("public/img"));
 
 
+
 app.get("/", function(req, res) {
-  res.sendFile(process.cwd() + "/index.html");
+  res.sendFile(process.cwd() + "/public/html/index.html");
 });
 
 app.listen(PORT, function() {
