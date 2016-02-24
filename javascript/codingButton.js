@@ -16,10 +16,10 @@ function codingFunction() {
     $(".btn-group-vertical").append(projectGroup);
     // add project below, will automatically be made into a button
     var projectNames ={
-    0:{text:"<strong>First Game</strong>:Click On Carmack", link:"/clicky"}, 
+    0:{text:"<strong>First Game</strong>:Click On Carmack", link:"https://evening-beyond-7392.herokuapp.com"}, 
     1:{text: "To-Do List", link:"https://fathomless-cliffs-4838.herokuapp.com"},  
     2:{text:"Tri State Hotels", link:"https://evening-beyond-7392.herokuapp.com"},
-    3:{text:"Rocks Paper Scissor", link:"/rps"},
+    3:{text:"Rocks Paper Scissor", link:"https://polar-inlet-6927.herokuapp.com"},
     4:{text:"To-Go List", link:"http://to-go-list.herokuapp.com"},
     5:{text:"King of New York Dice Roller", link:"https://kingofdice.herokuapp.com/"} 
     }
