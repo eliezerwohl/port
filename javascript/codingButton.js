@@ -24,7 +24,7 @@ function codingFunction() {
     5:{text:"King of New York Dice Roller", link:"https://kingofdice.herokuapp.com/"},
     6:{text:"Node.JS calculator", link:"https://github.com/eliezerwohl/Node.jsCalc"},
     7:{text:"Eat A Burger", link:"https://powerful-reaches-65882.herokuapp.com/"},
-    8:{text:"Group Project: WhereRU", link:"http://rutgersflyers.herokuapp.com/"},
+    8:{text:"Group Project: WhereRU", link:"http://rutgersflyers.herokuapp.com/"}
     }
     for (var i = 0; i < Object.keys(projectNames).length; i++) {
        console.log(projectNames[i].link)
