@@ -18,9 +18,9 @@ function codingFunction() {
     var projectNames ={
     0:{text:"<strong>First Game</strong>:Click On Carmack", link:"https://evening-beyond-7392.herokuapp.com"}, 
     1:{text: "To-Do List", link:"https://fathomless-cliffs-4838.herokuapp.com"},  
-    2:{text:"Tri State Hotels", link:"https://evening-beyond-7392.herokuapp.com"},
-    3:{text:"Rocks Paper Scissor", link:"https://polar-inlet-6927.herokuapp.com"},
-    4:{text:"To-Go List", link:"http://to-go-list.herokuapp.com"},
+    2:{text:"Group Project: Tri State Hotels", link:"https://polar-inlet-6927.herokuapp.com/"},
+    3:{text:"Rocks Paper Scissor", link:"http://tiger-rpc.herokuapp.com/"},
+    4:{text:"Group Project: To-Go List", link:"http://to-go-list.herokuapp.com"},
     5:{text:"King of New York Dice Roller", link:"https://kingofdice.herokuapp.com/"},
     6:{text:"Node.JS calculator", link:"https://github.com/eliezerwohl/Node.jsCalc"},
     7:{text:"Eat A Burger", link:"https://powerful-reaches-65882.herokuapp.com/"},
